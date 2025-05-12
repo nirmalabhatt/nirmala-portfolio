@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Portfolio</title>
+    
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--   CSS file included -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+  
+    <!-- cdn for fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+      <section class="sectionHome" id="home"><!-- ============Home section starts=============== -->
+      	<div class="main">
+      		<div class="header">
+      			<div class="portfolio_logo">
+                    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-portfolio-web-development-flaticons-flat-flat-icons.png"/>
+      				<span>Portfolio</span>
+      			</div>
+
+      			<div class="menus">
+      				<a href="#home">Home</a>
+      			    <a href="#about">About</a>
+                    <a href="#myProjects">Projects</a>
+                    <a href="#contact">Contact</a>
+      			</div>
+               
+               <!--======== mobile responsive menu starts==========-->
+               <div class="menuBar" onclick="menuControl();">
+                    <div class="bar1" id="bar1"></div> <div class="bar2" id="bar2"></div> 
+                    <div class="bar3" id="bar3"></div>
+               </div>
+
+                <div id="mobileMenu" onclick="menuControl()">
+                    <div class="menus" id="mobMenuList" class="portfolio_logo">
+                        <div class="logo2">
+                            <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-portfolio-web-development-flaticons-flat-flat-icons.png"/>
+                        </div>
+    
+      			    	<a href="#home"><img src="https://img.icons8.com/material-outlined/20/ffffff/home--v2.png"/> Home</a>
+
+      			        <a href="#about"><img src="https://img.icons8.com/material-outlined/20/ffffff/about.png"/> About</a>
+
+                        <a href="#myProjects"><img src="https://img.icons8.com/material-outlined/20/ffffff/project.png"/> Projects</a>
+
+                        <a href="#contact"><img src="https://img.icons8.com/material-outlined/20/ffffff/contact-card.png"/> Contact</a>
+      			    </div>
+      		    </div>
+      		</div><!-- =======end of mobile responsive menu========== -->
+
+      		<div class="myInfo">
+      			<div class="myInfoText">
+      				<div class="texts">
+      					<span class="text1">Hello I am</span>
+      					<span class="text2">Nirmala Bhatt</span>
+      					<span class="text3"> <span class="text31">Frontend Developer</span></span> 
+      				</div>
+
+      				<div  id="cvButton"><a href="https://drive.google.com/file/d/1GQ0F08AiJYHPTwChQ1mektH02Met7Ecb/view?usp=drive_link">
+                    RESUME</a></div>
+      			</div>
+
+      			<div class="myImage">
+      				 <img src="nirmala.png" alt="My_Image">
+      			</div>
+      		</div>
+
+      		<div class="links">
+      			 <div class="myIcon"><a href="https://github.com/nirmalabhatt" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+      			 <div class="myIcon"><a href="https://x.com/Nirmala94325442?t=8n8CTSyb-WWPtViG0JtQvw&s=08" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+      			 <div class="myIcon"><a href="https://www.linkedin.com/in/nirmala-bhatt-968244236/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+      		</div>
+      	</div>
+      </section><!-- ============Home section ends=============== -->
+      
+
+      <section class="setionAbout" id="about"> <!-- ============About section starts=============== -->
+          <h1>About ME</h1>
+          <div class="about">
+              <div class="aboutContent">
+                   <div class="icon">
+                       <img src="icons/education.png" alt="education icon">
+                   </div>
+
+                   <div class="aboutText">
+                       <h2>My Education:</h2>
+                       <p>4 year BCA completed from Janjyoti Campus, Tribhuwan Unniversity Nepal<br>
+                          +2 Education completed from Kedar Secondary School.</p>
+                   </div>
+              </div>
+
+              <div class="aboutContent">
+                   <div class="icon">
+                       <img src="icons/experience.png" alt="experience icon">
+                   </div>
+
+                   <div class="aboutText">
+                       <h2>My INTERNSHIP:</h2>
+                       <p>Done internship of 3 months as front end developer in Neems Infosys Pvt. Ltd. Nepal<br>
+                          Completed some projcts during internship and later.</p>
+                   </div>
+              </div>
+
+              <div class="aboutContent">
+                   <div class="icon" id="icon3">
+                       <img src="icons/working.png" alt="expertise icon">
+                   </div>
+
+                   <div class="aboutText">
+                       <h2>EXPERIENCES AND HONORS:</h2>
+                       <p>Currently undergoing MERN Stack
+                        training at Ducat IT Academy <br>
+                        Soft Skills Training:
+                        From DUCAT IT Training Academy,
+                        New Delhi From Feb (2025) March
+                        (2025).</p>
+                   </div>
+              </div>
+
+              <div class="aboutContent">
+                   <div class="icon" id="icon3">
+                       <img src="icons/brain.png" alt="my nature icon">
+                   </div>
+
+                   <div class="aboutText">
+                       <h2>My Nature:</h2>
+                       <p>I take some more time to complete any project <br>
+                          but try to give best project not just good one.</p>
+                   </div>
+              </div>
+          </div>
+      </section><!-- ============About section ends=============== -->
+      
+
+      <!-- ============Project section starts=============== -->
+      <section class="myProjects" id="myProjects">
+          <h1>My Projects</h1>
+          <div class="projects">
+              <div class="project">
+                  <div class="projectLogo">
+                       <img src="projectLogos/logo2.png" alt="Helloprogrammers Logo">
+                  </div>
+                  <div class="projectInfo">
+                       <h3 class="projectText1">Weather App </h3>
+                       <p class="projectText2">A simple weather App, Used Open Weather Map API for fetching real time weather
+                        data across the world. </p>
+                       <a href="https://github.com/nirmalabhatt/weatherApp" target="_blank"><span>View Project</span></a>
+                  </div>
+              </div>
+
+              <div class="project">
+                  <div class="projectLogo">
+                       <img src="projectLogos/logoJC.png" alt="JC Logo">
+                  </div>
+                  <div class="projectInfo">
+                       <h3 class="projectText1">Neem Infosys clone</h3>
+                       <p class="projectText2">Second Practice Project during internship adding some bootstrap.</p>
+                       <a href="https://github.com/nirmalabhatt/internproject" target="_blank"><span>View Project</span></a>
+                  </div>
+              </div>
+              
+
+              <div class="project">
+                  <div class="projectLogo">
+                       <img src="projectLogos/alpha.png" alt="Alpha Logo">
+                  </div>
+                  <div class="projectInfo">
+                       <h3 class="projectText1">Subnima Harbal</h3>
+                       <p class="projectText2">>another Practice Project during internship adding some bootstrap.</p>
+                       <a href="https://github.com/nirmalabhatt/internproject1" target="_blank"><span>View Project</span></a>
+                  </div>
+              </div>
+          </div>
+      </section><!-- ============Project section ends=============== -->
+
+      
+      <!-- ============Contact section starts=============== -->
+      <section id="contact">
+          <h1 id="contactHead">Contact ME</h1> 
+          <div class="contact">          
+            <div class="contactDiv" id="ctn1">
+                <h2>Github & Social Medias:</h2>
+                <div class="links" id="contactLinks">
+                 <div class="myIcon"><a href="https://github.com/nirmalabhatt" target="_blank"><i class="fa-brands fa-github" id="gthub"></i></a></div>
+                 <div class="myIcon"><a href="https://x.com/Nirmala94325442?t=8n8CTSyb-WWPtViG0JtQvw&s=08" target="_blank"><i class="fa-brands fa-twitter" id="twitter"></i></a></div>
+                 <div class="myIcon"><a href="https://www.linkedin.com/in/nirmala-bhatt-968244236/" target="_blank"><i class="fa-brands fa-linkedin" id="lnkdn"></i></a></div>
+                </div>
+            </div>
+                
+            <div class="contactDiv" id="contact2">
+                <a href="tel:+91-8595744369"> <i class="fas fa-phone-alt"></i> <br>
+                <p>+91-8595744369</p> </a>
+            </div>
+                  
+            <div class="contactDiv" id="contact2">
+                <a href="nirubhatt.011@gmail.com">  <i class="fas fa-envelope"> </i> <br>
+                <p>nirubhatt.011@gmail.com</p>  </a>
+            </div>
+          </div>
+      </section>
+
+     <!--  ====================================================================================
+      ========================= Javascript Part Starts ========================================== -->
+      <script type="text/javascript">
+            // JS DOM for well working of sidebar menu
+            var x=0;   //denotes menu is hidden
+            function menuControl(){
+                switch(x){
+                    case 0:
+                        document.getElementById('mobMenuList').style.opacity="1";
+                        document.getElementById('mobMenuList').style.height="220px";
+                        document.getElementById('mobMenuList').style.pointerEvents = "auto";
+                        document.getElementById('bar1').style.transform = "rotate(45deg)";
+                        document.getElementById('bar2').style.transform = "rotate(135deg)";
+                        document.getElementById('bar1').style.marginTop = "8px";
+                        document.getElementById('bar2').style.marginTop = "-2px";
+                        document.getElementById('bar3').style.display = "none";
+                        x=1;  //denotes menu is visible
+                        break;
+
+                    case 1:
+                        document.getElementById('mobMenuList').style.opacity="0";
+                        document.getElementById('mobMenuList').style.height="0px";
+                        document.getElementById('mobMenuList').style.pointerEvents = "none";
+                        document.getElementById('bar1').style.transform = "rotate(0deg)";
+                        document.getElementById('bar2').style.transform = "rotate(0deg)";
+                        document.getElementById('bar1').style.marginTop = "0px";
+                        document.getElementById('bar2').style.marginTop = "6px";
+                        document.getElementById('bar3').style.display = "block";
+                        x=0;  //denotes menu is hidden
+                        break;
+
+                    default:
+                        document.getElementById('mobMenuList').innerHTML="Something went wrong";
+                        break;
+                }
+            };
+      </script>
+</body>
+</html>

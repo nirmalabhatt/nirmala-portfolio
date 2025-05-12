@@ -1,0 +1,719 @@
+/*=========Basic required css==========*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+:root{
+   font-size: 16px;
+   --bdr: 0px solid yellow; 
+}
+
+body{
+   font-size: 16px;
+   color: #fff;
+   background: #000;
+}
+
+/*======================== CSS for Home Section Starts==========================
+==============================================================================*/
+.sectionHome{
+	background-image: url("bg.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: var(--bdr);
+}
+
+.main{
+	background-color: rgba(0,0,0,0.7);	
+	border: var(--bdr);
+	padding-bottom: 4rem;
+}
+
+/*============== css for header/nav starts=================*/
+ .main .header{
+ 	padding-left: 40px;
+	height: 100px;
+	width: 100%;
+	background: transparent;
+	display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: var(--bdr);
+    position: relative;
+}
+
+.header .portfolio_logo{
+	height: 100%;
+	max-width: 12.5rem;
+	font-size: 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: fantasy;
+    border: var(--bdr);
+}
+
+.header .menus{
+	padding-right: 40px;
+	position: absolute;
+	top: 30px;
+    right: 0px;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
+    border: var(--bdr);
+ }
+
+.header .menus a{
+	color: #ffffff;
+	margin: 10px 0px 0px 4rem;
+    padding: 0.25rem 0.25rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s linear;
+    position: relative;
+}
+
+.header .menus a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	bottom: -2px;
+	background: #ff2890;
+	transform: scale(0,1);
+	/*transform-origin: 0% 100%;*/ 
+	/* use transform only if animate from center and use transform and transform-origin both
+	 if need to animate from left to right*/
+	transition: transform 0.3s ease;
+}
+
+.header .menus a:hover::after{
+	transform: scale(1,1);
+}
+
+/*============= CSS for mobile responsive menu starts ======================*/
+ .header .menuBar{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    padding: 8px 4px;
+    display: none;
+    z-index: 12;
+}
+
+.menuBar .bar1, .bar2, .bar3{
+	text-align: center;
+	height: 2px;
+    width: 25px;
+    background: #ffffff;
+    transition: all 0.3s;
+}
+
+.menuBar #bar2{
+    margin-top: 6px;
+}
+
+.menuBar #bar3{
+    margin-top: 6px;
+}
+
+#mobileMenu{
+	z-index: 10;
+}
+
+#mobMenuList{
+	padding: 25px 0;
+	display: inline-flex;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background:rgba(50, 50, 50, .9);
+	transition: all 0.5s;
+ }
+
+#mobMenuList .logo2{
+    width: 100%;
+}
+
+#mobMenuList a{
+	width: 40%;
+	background: transparent;
+    padding: 20 40px;
+    border-bottom: 2px solid #ff2890;
+    border-top: 1px solid #048fb5;
+    border-left: 1px solid #048fb5;
+    border-right: 1px solid #048fb5;
+}
+/*=============== CSS for mobile responsive menu ends ======================== */
+
+.myInfo{
+	border: 1px solid #fff;
+	height: auto;
+	width:100%;
+	display: inline-flex;
+	justify-content: space-around;
+	border: var(--bdr);
+}
+
+.myInfo .myInfoText{
+	margin-top: 6.25rem;
+	color: #fff;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 3rem;
+	border: var(--bdr);
+}
+
+.myInfoText .texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.myInfo .myInfoText .text1{
+    font-size: 2.5rem;
+}
+
+.myInfo .myInfoText .text2{
+    font-size: 3.5rem;
+    color: #ff2890;
+    font-weight: 600;
+}
+
+.myInfo .myInfoText .text3{
+    font-size: 1.5rem;
+}
+
+.myInfo .myInfoText .text31{
+    font-size: 1.5rem;
+    color: #64faed;
+}
+
+.myInfo .myInfoText #cvButton{
+	height: 3.125rem;
+	width: 11.56rem;
+	background-color: #048fb5;
+	border-style: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition:  0.2s linear;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	position: relative;
+}
+
+.myInfo .myInfoText #cvButton a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+	font-family: 'Montserrat', sans-serif;
+	z-index: 1;
+}
+
+.myInfo .myInfoText #cvButton::before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+    height: 0px;
+	width: 0px;
+	background: #ff2890;
+	border-radius: 5px;
+	transition: all 0.5s;
+}
+
+.myInfoText #cvButton:hover:before{
+	height: 100%;
+	width: 100%;
+}
+
+.myInfo .myImage{
+	margin-top: 1.5rem;
+	overflow: hidden;
+	background: rgba(73, 139, 245,0.5);
+    border-radius: 100%;
+    border: 4px solid #ff2890;
+}
+
+.myInfo .myImage img{
+	height: 22rem;
+	width: auto;
+	margin-top: -3.125rem;
+	transform: scale(1.2);
+}
+
+ .links{
+ 	padding: 0 20px;
+	margin-top: 3rem;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .links .myIcon{
+	margin: 1.5rem 3.125rem;
+	height: 3.75rem;
+	width: 3.75rem;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 100%;
+    position: relative;
+    stroke: #678975;
+}
+
+ .links .myIcon a{
+	text-decoration: none;
+}
+
+.links .myIcon a i{
+	color: #036c8a;
+	z-index: 1;
+	transition: all 0.5s;
+}
+
+ .main .links .myIcon .fa-github, .fa-facebook{
+ 	font-size: 1rem;
+	transform: scale(2.6);
+}
+
+.main .links .myIcon .fa-twitter, .fa-linkedin{
+	font-size: 1rem;
+	transform: scale(2.25);
+}
+
+ .links .myIcon::before{
+	content: "";
+	position: absolute;
+	left: -2px;
+	bottom: -2px;
+    height: 0px;
+	width: 0px;
+	background: #222;	
+	border-radius:100%;
+	transition: all 0.5s;
+
+}
+
+.links .myIcon:hover:before{
+	height: 100%;
+    width: 100%;
+    border:2px solid #ff2890;
+}
+
+.links .myIcon:hover a i:before{
+	color: #04a6dd;
+}
+
+/*======================== CSS for About Section (also some css for h1 h2 
+my projects and contact section) Starts=================================*/
+.setionAbout{
+	padding:3.5rem 2.75rem 3.5rem 2.5rem;
+	background: #eee;
+}
+
+.setionAbout h1, .myProjects h1, #contact h1{
+   width: 100%;
+   text-align: center;
+   color: #ff2890;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 3rem;
+}
+
+.setionAbout .about{
+   margin: 2.5rem 0rem 1.5rem 0rem;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.setionAbout .aboutContent{
+   width: 50%;
+   margin: 2rem 0rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.setionAbout .icon{
+    height: 6.25rem;
+    width: 6.25rem;
+    background: rgba(4, 143, 181 , .6);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.setionAbout #icon3, #icon4{
+	padding-left: 0rem;
+}
+
+.setionAbout .icon img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.setionAbout .aboutText{
+	text-align: justify-all;
+}
+
+.setionAbout .aboutText h2, .projectText1, .contactDiv h2,.contactDiv a{
+   color: #048fb5;
+   font-size: 1.5rem;
+   margin-top: 10px;
+   text-decoration-style: solid;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.setionAbout .aboutText p, .projectText2{
+    color: #222;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+ }
+
+/*================CSS for My Projects Section Starts===========*/
+.myProjects{
+	background: #ddd;
+	padding:3.5rem 2.75rem 3.5rem 2.5rem;
+}
+
+.myProjects .projects{
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.myProjects .project{
+    width: 30%;
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px #ff2890, -1px -1px 2px #ff2890;
+    padding: 1rem;
+}
+
+.myProjects .project .projectLogo img{
+   height: 5rem;
+   width: auto;
+}
+
+.myProjects .projects .project, .projectInfo{
+	text-align: justify-all;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.myProjects .projects .projectInfo a{
+	color: #fff;
+	text-decoration: none;
+	background: #666;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    margin: 1rem 0rem;
+    position: relative;
+    z-index: 0;
+}
+
+.myProjects .projects .projectInfo a::before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+    height: 0px;
+	width: 0px;
+	background: #018fb5;
+	border-radius: 5px;
+	transition: all 0.5s;
+}
+
+.myProjects .projects .projectInfo a span{
+	z-index: 1;
+}
+
+.myProjects .projects .projectInfo a:hover:before{
+	height: 100%;
+	width: 100%;
+}
+
+/*================CSS for My Contact Section Starts===========*/
+#contact{
+	background: #444;
+    padding:3.5rem 0rem 3.5rem 0rem;
+}
+
+#contact #contactHead{
+   color: #fff;
+}
+
+.contact{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1.5rem 0rem 0rem 0rem;
+}
+
+.contactDiv{
+  width: 30%;
+  text-align: center;
+  flex-shrink: 0;
+  margin: 1rem;
+}
+
+#ctn1{
+  width: auto;
+}
+
+.contactDiv h2{
+  color: #fff;
+  font-weight: 400;
+  margin: 1rem 0rem;
+}
+
+#contact #contactLinks a i{
+  color: #444;
+}
+
+#gthub, #fb{
+	font-size: 1.5rem;
+   transform: scale(1.4);
+   margin-bottom: 0.8rem;
+}
+
+#twitter, #lnkdn{
+	font-size: 1.5rem;
+	transform: scale(1.2);
+    margin-bottom: 0.7rem;
+}
+
+#contact .contact #contact2 a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+#contact .links .myIcon:hover:before{
+	height: 0%;
+    width: 0%;
+    border:0px solid #ff2890;
+}
+
+#contact .links .myIcon:hover a i:before{
+	color: #000;
+}
+
+#contact .links .myIcon:hover{
+	background: #ccc;
+}
+
+.contactDiv p{
+   font-size: 1.2rem;
+   margin-top: 0.5rem;
+   overflow-wrap: break-word;
+}
+
+#contact #contact2 i:hover{
+   color: #ccc;
+}
+
+#contact #contact2 p:hover{
+   color: #ccc;
+}
+
+#contact .contact .links{
+	margin: 0rem 0rem;
+}
+
+#contact .contact .links .myIcon{
+	margin: 0rem 1rem;
+	height: 3rem;
+	width: 3rem;
+}
+
+/*================CSS for Scrollbar Customization===========*/
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #54c0de;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2890;
+}
+
+
+
+/*===========Media Queries for Responsive Design===========
+=========================================================*/
+@media screen and (max-width: 1050px) {
+.contactDiv, #ctn1{
+  width: 45%;
+}
+}
+
+@media screen and (max-width: 900px) {
+   :root{
+   font-size: 15px; 
+}
+
+section .main .myInfo .myImage img{
+	height: 22rem;
+}
+}
+
+@media screen and (max-width: 840px) {
+   :root{
+   font-size: 14px; 
+}
+}
+
+@media screen and (max-width: 800px) {
+   :root{
+   font-size: 12px; 
+}
+
+.myProjects .project{
+    width: 40%;
+}
+}
+
+@media screen and (max-width: 685px) {
+section .main .header .menus a{
+	margin: 10px 0px 0px 1rem;
+}
+
+section .main .links .myIcon{
+	margin: 1.25rem auto;
+}
+
+.contactDiv, #ctn1{
+  width: 90%;
+}
+}
+
+@media screen and (max-width: 620px) {
+section .main .header .menuBar{
+    display: block;
+}
+
+section .main .header .menus{
+	display: none;
+}
+
+section .main .myInfo{
+	padding-left: 40px;
+	padding-right: 40px;
+	justify-content: space-between;
+}
+
+section .main .myInfo .myInfoText{
+	margin-top: 3.5rem;
+}
+
+section .main .myInfo .myImage{
+	margin-top: 1rem;
+}
+
+section .main .myInfo .myImage img{
+	height: 20rem;
+}
+
+section .main .links{
+	margin-top: 1.5rem;
+}
+
+/*aboutMe section */
+.setionAbout .aboutContent{
+   width: 100%;
+}
+}
+
+@media screen and (max-width: 530px) {
+section .main .myInfo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column-reverse;
+}
+
+section .main .myInfo .myInfoText{
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+section .main .myInfo .myImage{
+	margin-top: 0rem;
+	width: 15rem;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section .main .myInfo .myImage img{
+	height: 200px;
+	width:160px;
+}
+
+section .main .links{
+	margin-top: 1rem;
+}
+
+.myProjects .project{
+    width: 95%;
+    margin: 2rem 0rem;
+
+}
+}
+
